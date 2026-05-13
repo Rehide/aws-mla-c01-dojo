@@ -24,6 +24,9 @@ export async function generateMetadata({
     title: content.metaTitle,
     description: content.metaDescription,
     ...(config.comingSoon && { robots: { index: false } }),
+    alternates: {
+      canonical: `/exam/${examId}`,
+    },
     openGraph: {
       title: content.metaTitle,
       description: content.metaDescription,

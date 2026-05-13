@@ -5,6 +5,9 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "お問い合わせ | AWS演習道場〜無料試験問題集〜",
   description: "AWS演習道場〜無料試験問題集〜へのお問い合わせはこちらから。問題の誤りのご指摘・ご要望・その他ご連絡をお受けしています。",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

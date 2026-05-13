@@ -3,6 +3,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "免責事項 | AWS演習道場〜無料試験問題集〜",
+  alternates: {
+    canonical: "/disclaimer",
+  },
   description:
     "AWS演習道場〜無料試験問題集〜の免責事項です。コンテンツの正確性・AWS商標・外部リンク・損害に関する方針を説明します。",
 };

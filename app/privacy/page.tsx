@@ -3,6 +3,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー | AWS演習道場〜無料試験問題集〜",
+  alternates: {
+    canonical: "/privacy",
+  },
   description:
     "AWS演習道場〜無料試験問題集〜のプライバシーポリシーです。個人情報の取り扱い・Cookie・Google AdSenseについて説明します。",
 };
