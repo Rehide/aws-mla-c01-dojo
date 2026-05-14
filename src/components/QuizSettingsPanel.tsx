@@ -37,7 +37,7 @@ export function QuizSettingsPanel({ selectedExamId, onStart }: Props) {
   }, [selectedExamId, isExam, selectedDomains, domainIds]);
 
   const effectiveDomains = isExam ? domainIds : [...selectedDomains];
-  const canStart = effectiveDomains.length > 0;
+  const canStart = effectiveDomains.length > 0 && availableCount > 0;
 
   const handleDomainChange = (domain: number, checked: boolean) => {
     setSelectedDomains((prev) => {
@@ -182,6 +182,11 @@ export function QuizSettingsPanel({ selectedExamId, onStart }: Props) {
               </span>
             )}
           </p>
+          {availableCount === 0 && (
+            <p className="mt-2 text-xs text-red-500">
+              この条件で出題できる問題がありません。ドメイン設定を見直してください。
+            </p>
+          )}
         </div>
 
         {/* 開始ボタン */}
